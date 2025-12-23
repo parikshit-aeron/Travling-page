@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Landing Page - Parikshit Aeron</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7fb;
+            color: #333;
+        }
+
+        header {
+            background-color: #0a3d62;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+            url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee") center/cover;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            padding: 10px 25px;
+            border: none;
+            background-color: #ff9f1a;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 60px 40px;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 30px;
+            color: #0a3d62;
+        }
+
+        .services {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .service-box {
+            background-color: white;
+            width: 250px;
+            padding: 25px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        }
+
+        .destinations {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .destination-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .destination-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .destination-card h3 {
+            padding: 15px;
+        }
+
+        .steps {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .step {
+            background-color: #ffffff;
+            width: 250px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .testimonials {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .testimonial {
+            background-color: white;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .newsletter {
+            background-color: #0a3d62;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .newsletter input {
+            padding: 10px;
+            width: 250px;
+            border: none;
+            margin-top: 15px;
+        }
+
+        .newsletter button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #ff9f1a;
+            color: white;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #1e272e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                margin-top: 10px;
+            }
+
+            .hero h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>TravelGo</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Destinations</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <div>
+        <h2>Explore the World</h2>
+        <p>Plan your next trip with ease and confidence</p>
+        <button>Get Started</button>
+    </div>
+</div>
+
+<section>
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service-box">Flight Booking</div>
+        <div class="service-box">Hotel Booking</div>
+        <div class="service-box">Tour Packages</div>
+    </div>
+</section>
+
+<section>
+    <h2>Top Destinations</h2>
+    <div class="destinations">
+        <div class="destination-card">
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34" alt="Paris">
+            <h3>Paris</h3>
+        </div>
+
+        <div class="destination-card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Bali">
+            <h3>Bali</h3>
+        </div>
+
+        <div class="destination-card">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c" alt="Dubai">
+            <h3>Dubai</h3>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Book Your Trip</h2>
+    <div class="steps">
+        <div class="step">Choose Destination</div>
+        <div class="step">Make Payment</div>
+        <div class="step">Enjoy Trip</div>
+    </div>
+</section>
+
+<section>
+    <h2>What Our Users Say</h2>
+    <div class="testimonials">
+        <div class="testimonial">"Very easy to use and affordable!"</div>
+        <div class="testimonial">"Best travel experience ever."</div>
+    </div>
+</section>
+
+<div class="newsletter">
+    <h2>Subscribe to our Newsletter</h2>
+    <input type="email" placeholder="Enter your email">
+    <button>Subscribe</button>
+</div>
+
+<footer>
+    <p>developed by: <b>Parikshit Aeron</b></p>
+</footer>
+
+</body>
+</html>
